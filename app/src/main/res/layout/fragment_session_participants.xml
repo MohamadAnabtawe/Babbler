@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.SessionParticipantsFragment">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Session Participants:"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/session_participants_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        ></ListView>
+
+    <LinearLayout
+        android:id="@+id/start_session_layout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@drawable/blkk"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/s_start"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/card_item"
+            android:text="Start Session"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </RelativeLayout>

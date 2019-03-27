@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.MessagesFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_msg"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="My Messages"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sent_msg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/card_item2"
+        android:text="Sent Messages"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/recv_msg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_item3"
+        android:text="Received Messages"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>

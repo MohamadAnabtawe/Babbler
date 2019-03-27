@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/list_item"
+        >
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/requestID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/com_facebook_likeview_text_color"
+            android:textSize="12sp"
+            tools:text="request number:1223" />
+
+        <TextView
+            android:id="@+id/category_request_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Diet and Healthy food" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/addRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:id="@+id/deleteRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>

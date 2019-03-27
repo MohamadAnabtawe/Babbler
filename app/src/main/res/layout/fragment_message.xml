@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.MessageFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="3dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msg_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Question about the last session" />
+
+            <TextView
+                android:id="@+id/msg_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                tools:text="From: m.k.a.95@hotmail.com" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/msg_time_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        tools:text="13:24, 12-05-2018" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="content:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_item"
+        android:editable="false"
+        android:padding="8dp"
+        android:textColor="#f2f2f2"
+        tools:text="Message Content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/reply_msg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/reply" />
+
+    <Button
+        android:id="@+id/delete_msg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/delete_msg" />
+</LinearLayout>
+
+</LinearLayout>

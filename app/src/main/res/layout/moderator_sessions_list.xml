@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/list_item"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/m_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/b"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        app:civ_border_color="#005889"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/m_img"
+        android:layout_toStartOf="@+id/l4">
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:text="12:02" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Diet and Healthy food" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:id="@+id/l4">
+
+        <ImageView
+            android:id="@+id/sessionParticipants"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/users" />
+
+        <ImageView
+                android:id="@+id/deleteSession"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+</RelativeLayout>

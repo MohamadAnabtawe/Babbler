@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/list_item"
+    >
+
+    <ImageView
+        android:id="@+id/m_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/msg_ic"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/m_img"
+        android:layout_toEndOf="@+id/m_img"
+        android:layout_toStartOf="@+id/l1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/subject_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Diet and Healthy food" />
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msg_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:text="12-12-2018" />
+
+        <TextView
+            android:id="@+id/msg_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:text="12:02" />
+    </LinearLayout>
+
+</RelativeLayout>

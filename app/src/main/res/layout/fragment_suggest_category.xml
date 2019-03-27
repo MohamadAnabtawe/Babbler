@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Participant.SuggestCategoryFragment"
+        android:screenOrientation="portrait"
+       >
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/catReqConfirm"
+                android:layout_width="300dp"
+                android:layout_height="47dp"
+                android:background="@drawable/card_item2"
+                android:text="Confirm"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catReq" />
+
+            <Button
+                android:id="@+id/catReqCancel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/card_item_error"
+                android:text="Cancel"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/catReqConfirm"
+                app:layout_constraintVertical_bias="0.473"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/textView12"
+        android:layout_above="@+id/l5">
+
+
+        <EditText
+            android:id="@+id/catReq"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="New Category"
+            android:inputType="textPersonName"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Suggest New Category"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/list_item"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/p_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_alignParentLeft="true"
+        app:civ_border_color="#005889"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/p_img"
+        android:layout_toStartOf="@+id/deleteParticipant"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Mohamad Anabtawe" />
+
+        <TextView
+            android:id="@+id/p_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:text="m.k.a.95@hotmail.com" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deleteParticipant"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

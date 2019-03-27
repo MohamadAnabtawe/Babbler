@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context="com.android.babbler.LoginRegister.RegisterActivity"
+    android:screenOrientation="portrait">
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Sign Up"
+        android:textColor="#FFFF"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv_signup"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tv_signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:onClick="onClick"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/bdate"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/phone"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="14dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_date"
+            android:ems="10"
+            android:hint="Birthday"
+            android:inputType="date"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/bdate"
+            android:layout_below="@+id/bdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#87ffffff"
+            android:drawableLeft="@drawable/ic_action_address"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHighlight="@android:color/holo_blue_dark"
+            android:textColorHint="@color/common_google_signin_btn_text_light_default"
+            android:textColorLink="@color/cardview_light_background"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cardview"
+            android:layout_alignTop="@+id/cardview"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Register"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
