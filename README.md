@@ -1,0 +1,3 @@
+# Overview
+ One of the main problem that one faces when learns a new language is the lack of practice. A social network that gives you an opportunity to talk to the native language speakers might be an option. Recently, it became very widespread to organize different events and meetings, using the internet and the social media. It makes the organization easier, with less use of resources and it helps to control who participate in the event. The aim of this project is to develop and implement an Android based application, which helps people to find partners for talks via telephones, according to their hobbies and other interests, and organize the talks, based on those mutual interests. 
+ 
